@@ -12,7 +12,7 @@ COMMON_EXECUTE = [
     "export UNWIND_DIR=$$(pwd)/$(GENDIR)/third_party/libunwind",
     "export INSTALL_DIR=$$(pwd)/$(@D)",
     "export TMP_DIR=$$(mktemp -d -t gperftools.XXXXX)",
-    "export LD_LIBRARY_PATH=/lib/x86_64-linux-gnu:$LD_LIBRARY_PATH",
+    "export LD_LIBRARY_PATH=/lib/x86_64-linux-gnu:$(LD_LIBRARY_PATH)",
     "mkdir -p $$TMP_DIR",
     "cp -R $(SRCS) $$TMP_DIR",
     "cd $$TMP_DIR",
