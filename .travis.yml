@@ -46,4 +46,4 @@ script:
   - scripts/travis/ci.sh
 
 after_failure:
-  - find . -name config.log -o heron_build.txt -print -exec cat {} \; 
+  - find . -name config.log -o -name heron_build.txt -print -exec cat {} \; 
