@@ -46,3 +46,6 @@ script:
   - which g++-4.8
   - g++ --version
   - scripts/travis/ci.sh
+
+after_failure:
+  - find . -name heron_build.txt -print -exec cat {} \;
