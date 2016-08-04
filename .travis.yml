@@ -38,6 +38,7 @@ before_script:
   - hugo version
 
 script:
+  - for p in $(dpkg -l | awk /lzma/ { print $2 }); echo $p; dpkg -L $p; done
   - which gcc-4.8
   - gcc --version
   - which g++-4.8
