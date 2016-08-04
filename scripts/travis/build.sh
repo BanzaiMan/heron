@@ -4,7 +4,7 @@
 # of the below commands fail so we need to chain them in this script.
 #
 
-set -e
+set -x
 
 DIR=`dirname $0`
 source ${DIR}/common.sh
