@@ -2,8 +2,6 @@ group: edge
 
 sudo: required
 
-dist: trusty
-
 language: java
 
 jdk:
